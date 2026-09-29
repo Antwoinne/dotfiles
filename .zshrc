@@ -3,6 +3,15 @@
 #  Managed via: https://github.com/Antwoinne/dotfiles
 # ─────────────────────────────────────────────────────────────
 
+# ── PATH ─────────────────────────────────────────────────────
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+
 # ── History ──────────────────────────────────────────────────
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
